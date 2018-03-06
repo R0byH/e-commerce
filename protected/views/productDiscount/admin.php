@@ -45,16 +45,19 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 	'dataProvider'=>$model->search(),
 	'filter'=>$model,
 	'columns'=>array(
-		'id',
-		'product_id',
+		//'id',
+		array(
+			'name'=>'product_id',
+			'header'=>'Product',
+			'value'=>'Product::Model()->FindByPk($data->id)->product_name',
+		),
 		'discount_value',
 		'discount_unit',
-		'create_date',
-		'valid_from',
-		/*
+		//'create_date',
+		'valid_from',		
 		'valid_until',
 		'coupon_code',
-		'minimum_order_value',
+		/*'minimum_order_value',
 		'maximum_discount_amount',
 		'is_redeem_allowed',
 		*/

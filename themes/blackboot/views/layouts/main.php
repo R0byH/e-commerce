@@ -54,6 +54,11 @@
 							//array('label'=>'Inicio', 'url'=>array('/site/index')),
 							array('label'=>'Inicio', 'url'=>array('/site/index')),
 							array('label'=>'Product', 'url'=>array('/product/admin')),
+							array('label'=>'Product Price', 'url'=>array('/productpricing/admin')),
+							array('label'=>'Product Discount', 'url'=>array('/productDiscount/admin')),
+							array('label'=>'Product Category Discount', 'url'=>array('/productCategoryDiscount/admin')),
+							array('label'=>'User', 'url'=>array('/user/admin')),
+							array('label'=>'Payment Offer', 'url'=>array('/paymentOffer/admin')),
                                 //array('label'=>'Pacientes', 'url'=>array(Yii::app()->session["idrol"]==1?"/paciente/admin":"/paciente/index"),),
 				/*array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
 				array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest)*/
@@ -136,7 +141,7 @@
 	  <div class="container">
               <div class="row">
 			<div id="footer-copyright" class="col-md-6">
-				Olañeta N°1 - (4)6462972
+				Cesar Roberto Herbas Delgadillo
 			</div> <!-- /span6 -->
 			<div id="footer-terms" class="col-md-6">
                                 Sucre - Bolivia

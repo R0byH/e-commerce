@@ -22,7 +22,11 @@ $this->menu=array(
 	'data'=>$model,
 	'attributes'=>array(
 		'id',
-		'product_category_id',
+		array(
+			'name'=>'product_category_id',
+			'header'=>'Product Category',
+			'value'=>ProductCategory::Model()->FindByPk($model->product_category_id)->category_name,
+		),
 		'discount_value',
 		'discount_unit',
 		'create_date',

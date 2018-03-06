@@ -45,12 +45,22 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 	'dataProvider'=>$model->search(),
 	'filter'=>$model,
 	'columns'=>array(
-		'id',
-		'product_id',
+		//'id',
+		//'product_id',
+		array(
+			'name'=>'product_id',
+			'header'=>'Product',
+			'value'=>'Product::Model()->FindByPk($data->id)->product_name',
+		),
 		'base_price',
 		'create_date',
 		'expiry_date',
-		'in_active',
+		//'in_active',
+		array(
+			'name'=>'in_active',
+			'header'=>'In Active',
+			'value'=>'$data->in_active==0?"False":"True"',
+		),
 		array(
 			'class'=>'CButtonColumn',
 		),
