@@ -1,0 +1,189 @@
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.clearfix:after {
+  clear: both;
+}
+.hide-text {
+  font: NaN a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+.input-block-level {
+  display: block;
+  width: 100%;
+  min-height: 30px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.grid-view {
+  font-size: 13px;
+}
+.grid-view .table th > .sort-link {
+  color: #333;
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  position: relative;
+}
+.grid-view .table th > .sort-link:hover {
+  text-decoration: none;
+}
+.grid-view .table th > .sort-link .caret {
+  border-color: transparent;
+  border-style: solid;
+  border-width: 4px;
+  display: none;
+  position: absolute;
+  right: 5px;
+}
+.grid-view .table th > .sort-link.asc .caret {
+  border-bottom-color: #333;
+  display: block;
+  top: 4px;
+}
+.grid-view .table th > .sort-link.desc .caret {
+  border-top-color: #333;
+  display: block;
+  top: 8px;
+}
+.grid-view .table .filters > td .filter-container {
+  padding: 0 16px 0 0;
+}
+.grid-view .table .filters > td .filter-container input[type="text"], 
+.grid-view .table .filters > td .filter-container select {
+  margin-bottom: 0;
+  width: 100%;
+}
+.grid-view .table tr.selected td {
+  background: #eee;
+}
+.grid-view .table td {
+  vertical-align: middle;
+}
+.grid-view .table .checkbox-column {
+  width: 15px;
+}
+.grid-view .table .number-column {
+  text-align: right;
+}
+.grid-view .table .button-column {
+  text-align: right;
+  min-width: 50px;
+}
+.grid-view .summary {
+  color: #999999;
+  font-size: 12px;
+  padding: 6px 0;
+  text-align: right;
+}
+.grid-view .empty {
+  font-style: italic;
+}
+.grid-view.grid-view-loading {
+  background: url(../img/loader.gif) no-repeat 100% 10px;
+}
+.grid-view.grid-view-loading .table {
+  opacity: 0.5;
+}
+.grid-view.grid-view-loading .table th > .sort-link .caret {
+  display: none;
+}
+.detail-view .null { color:#ffc0cb; }
+.detail-view th {
+  text-align:right;
+  width:160px;
+}
+span.required {
+  color: #b94a48;
+  font-weight: bold;
+}
+
+/*add css for comment and post*/
+
+.post
+{
+  margin: 0 0 20px;
+}
+
+.post .title
+{
+  font-size: 1.5em;
+  border-bottom: 1px solid #C9E0ED;
+}
+
+.post .title a
+{
+  color: #555;
+  text-decoration: none;
+}
+
+.post .author
+{
+  color: #888;
+  margin: 0 0 5px;
+}
+
+.post .nav
+{
+  -moz-border-radius:7px;
+  padding: 5px;
+  background: #EFFDFF;
+}
+
+.comment
+{
+  -moz-border-radius:7px;
+  padding: 10px;
+  background: #F5F5F5;
+  margin: 5px 0;
+}
+
+.comment .content
+{
+  margin: 10px 0;
+}
+
+.comment .author
+{
+  margin: 5px 0;
+  padding: 0 0 3px;
+  border-bottom: 1px solid #DDD;
+}
+
+.comment .time
+{
+  color: #888;
+  font-size: 0.8em;
+}
+
+.comment a.cid
+{
+  color:#CCC;
+  float:right;
+  font-size:1.5em;
+  font-weight:bold;
+  padding:0 5px 5px 5px;
+  text-decoration: none;
+}
+
+.comment a.cid:hover
+{
+  color:#555;
+}
+
+.comment .pending
+{
+  color:red;
+}
+
+/*add css for comments and post*/
