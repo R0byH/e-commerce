@@ -49,7 +49,11 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 		'product_name',
 		'product_description',
 		'units_in_stock',
-		'product_category_id',
+		array(
+			'name'=>'product_category_id',
+			'header'=>'Product Category',
+			'value'=>'ProductCategory::Model()->FindByPk($data->product_category_id)->category_name',
+		),
 		'reward_points_credit',
 		array(
 			'class'=>'CButtonColumn',

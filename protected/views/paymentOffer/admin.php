@@ -45,14 +45,14 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 	'dataProvider'=>$model->search(),
 	'filter'=>$model,
 	'columns'=>array(
-		'id',
+		//'id',
 		'institute_type',
 		'institute_name',
 		'card_type',
 		'coupon_code',
 		'discount_value',
-		/*
 		'discount_unit',
+		/*
 		'create_date',
 		'valid_from',
 		'valid_until',
