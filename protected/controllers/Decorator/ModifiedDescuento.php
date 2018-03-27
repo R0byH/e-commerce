@@ -9,8 +9,9 @@ abstract class ModifiedDescuento
         $this->descuento = $descuento;
     }
 
-    public function descuentoFecha($id_articulo) { return $this->descuento->descuentoFecha($id_articulo); }
-    public function descuentoCategoria($id_articulo) { return $this->descuento->descuentoCategoria($id_articulo); }
+    public function descuentoFechaCategoria($cupon) { return $this->descuento->descuentoFechaCategoria($cupon); }
+    public function descuentoFecha($cupon) { return $this->descuento->descuentoFecha($cupon); }
+    public function descuentoPorcentajeCategoria($id_articulo) { return $this->descuento->descuentoPorcentajeCategoria($id_articulo); }
     public function descuentoPorcentaje($id_articulo) { return $this->descuento->descuentoPorcentaje($id_articulo); }
 
 }
