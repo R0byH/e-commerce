@@ -1,6 +1,6 @@
 <?php
 
-namespace App/Decorator;
+namespace App\Decorator;
 abstract class ModifiedDescuento
 {
     protected $descuento;

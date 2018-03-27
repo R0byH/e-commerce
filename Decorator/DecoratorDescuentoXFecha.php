@@ -1,18 +1,18 @@
 <?php
 
-namespace App/Decorator;
-use controllers/ProductCategoryDiscountController;
+namespace App\Decorator;
+use protected/controllers/ProductDiscountController;
 
-class DecoratorDescuentoXFechaXCategoria extends ModifiedDescuento
+class DecoratorDescuentoXFecha extends ModifiedDescuento
 {
-    public function descuentoFechaCategoria($cupon)
+    public function descuentoFecha($cupon)
     {
         $fechaActual= date('d/m/Y');
 
-        $monto_descuento = parent::descuentoFechaCategoria($cupon);
+        $monto_descuento = parent::descuentoFecha($cupon);
 
         //consultar el descuento por categoría para este cupon
-        $model=ProductCategoryDiscount::::where('coupon_code',$cupon)->first();
+        $model=ProductDiscount::where('coupon_code',$cupon)->first();
         $valid_from = $model->valid_from;
         $valid_until = $model->valid_until;
         if (($valid_from>=$fechaActual)&&($fechaActual=<$valid_from))

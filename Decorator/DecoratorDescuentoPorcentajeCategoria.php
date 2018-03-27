@@ -1,7 +1,7 @@
 <?php
 
-namespace App/Decorator;
-use controllers/ProductCategoryDiscountController;
+namespace App\Decorator;
+use protected/controllers/ProductCategoryDiscountController;
 
 class DecoratorDescuentoPorcentajeCategoria extends ModifiedDescuento
 {
