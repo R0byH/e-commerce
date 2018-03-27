@@ -2,7 +2,7 @@
 
 namespace App\controllers\State;
 
-class Context extends Abstract
+class ContextState extends AbstractState
 {
     private $estado;
     

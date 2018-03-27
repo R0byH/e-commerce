@@ -1,5 +1,9 @@
 <?php
 
+use .\State\Context;
+use .\State\Active;
+use .\State\Inactive;
+
 class ProductDiscountController extends Controller
 {
 	/**
@@ -28,7 +32,7 @@ class ProductDiscountController extends Controller
 	{
 		return array(
 			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('index','view'),
+				'actions'=>array('index','view', 'ver'),
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
@@ -44,6 +48,14 @@ class ProductDiscountController extends Controller
 			),
 		);
 	}
+
+	 public function actionVer()
+	 {
+		$estado = new Active();
+        $context =  new Context();
+        $context->setEstado($estado);
+        return $estado->isDiscount(18);
+	 }
 
 	/**
 	 * Displays a particular model.

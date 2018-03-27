@@ -2,7 +2,7 @@
 
 namespace App\controllers\State;
 
-Abstract class Abstract
+Abstract class AbstractState
 {
     
     public abstract function isDiscount($idProducto);

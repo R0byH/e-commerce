@@ -1,10 +1,10 @@
 <?php
 
-namespace Cupones\State;
+namespace App\controllers\State;
 
 use App\Models\ProductPricing;
 
-class Active extends Abstract
+class ActiveState extends AbstractState
 {
     
     public function isDiscount($idProducto)
