@@ -6,12 +6,6 @@
 
 La aplicaci&oacute;n est&aacute; estructurada en una arquitectura cliente servidor.
 
-
-## M&Oacute;DULOS IDENTIFICADOS DE LA APLICACI&Oacute;N:
-
-Para el funcionamiento se identific&oacute; los siguientes modelos con sus respectivos patrones para su desarrollo:
-
-
 ## PATRONES :
 
 ### Template ###
