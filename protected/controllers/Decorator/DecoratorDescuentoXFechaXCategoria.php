@@ -1,7 +1,8 @@
 <?php
 
-namespace App\Decorator;
-use protected/controllers/ProductCategoryDiscountController;
+namespace App\Controllers\Decorator;
+
+use App\Models\ProductCategoryDiscountController;
 
 class DecoratorDescuentoXFechaXCategoria extends ModifiedDescuento
 {

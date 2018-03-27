@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Template;
+namespace App\controllers\Template;
 
-use protected/controllers/ProductCategoryDiscountController;
+use App\Models\ProductCategoryDiscountController;
 
 class DescuentoXfechaXcategoria extends Template
 {

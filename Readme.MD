@@ -18,14 +18,18 @@ Para el funcionamiento se identific&oacute; los siguientes modelos con sus respe
 
 Este patr&oacute;n es utilizado para los pagos que incluyan cupones (Si se realiz&oacute; un cago con cup&oacute;n, se analizará si el articulo coprado tiene algun descuento, si no se paga con un cup&oacute;n no hay derecho alguno a descuentos)
 
-### Iterator ###
-
-Este patr&oacute;n es utilizado para calcular el monto a pagar por la compra, considerando si tiene o no descuento, fue considerado  para hacer compras de diversos articulos pero el cupon se aplicaría solo una vez, para un artículo o para una categoría (depende del cupón).
-(No está aplicado, aún estoy revisando la documentación)
-
 ### Decorator ###
 
 Este patr&oacute;n es utilizado para calcular el descuento que se aplicará (si amer&iatuce;a) por la compra; en caso de que haya alg&uacute;n descuento el monto del mismo será considerado en el momento de calcular el total a pagar.
+
+### State ###
+
+Este patr&oacute;n es utilizado para determinar si un producto se encuentra activo para aplicar un descuento o si esta inactivo (no se aplica descuento).
+
+### Iterator ###
+
+Este patr&oacute;n es utilizado para calcular el monto a pagar por la compra, considerando si tiene o no descuento, fue considerado  para hacer compras de diversos articulos pero el cupon se aplicaría solo una vez, para un artículo o para una categoría (depende del cupón).
+(Aún no está aplicado, aún estoy revisando la documentación para ver la mejor manera de implementarlo)
 
 
 ## TOMAR EN CUENTA :

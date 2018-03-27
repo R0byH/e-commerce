@@ -1,9 +1,10 @@
 <?php
 
-namespace App\Template;
-use protected/controllers/ProductDiscountController;
+namespace App\controllers\template;
 
-class DescuentoXcantidad extends Template
+use App\Models\ProductDiscountController;
+
+class DescuentoXfecha extends Template
 {
     protected function pagoConCupon()
     {
@@ -17,9 +18,9 @@ class DescuentoXcantidad extends Template
         
         //consultar si el cupon tiene fechas registradas para aplicar el descuento
         $model=ProductDiscount::where('coupon_code',$cupon)->first();
-        if ($model->maximum_discount_amount!="")
+        if (($model->valid_from!="")&&($model->valid_until!=""))
         {
-            $tipoDescuento = "DescuentoXcantidad";
+            $tipoDescuento = "DescuentoXfecha";
         }
          return $tipoDescuento;
         

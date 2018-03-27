@@ -1,14 +1,15 @@
 <?php
 
-namespace App\Template;
+namespace App\controllers\Template;
 
-abstract class Pago
+abstract class Template
 {
-    abstract protected function pagoConCupon();
+    abstract protected function pagoRealizado();
     abstract protected function tipoDescuento($cupon);
     
     public function pagoConCupon()
     {
+        $tipoDescuento = 0;
         $haycupon = $this->pagoRealizado();
         if ($haycupon)
         { 
@@ -21,15 +22,15 @@ abstract class Pago
         }
         
     }
-        return $document;
-    }
+        return $tipoDescuento;
+}
 /*
     public function tipoDescuentoAplicable()
     {
         
         
     }
-        return $document;
+        return $tipoDescuento;
     }
 */
 }
