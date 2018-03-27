@@ -1,5 +1,5 @@
 # Proyecto Final - M&oacute;dulo de cupones (semi e-commerce)
-#### Maestrante: Ing. Alejandra Pamenla Sivila Padilla
+
 #### Maestrante: Ing. Cesar Roberto Herbas Delgadillo
 
 ## ARQUITECTURA DE LA APLICACIÓN:
@@ -21,6 +21,7 @@ Este patr&oacute;n es utilizado para los pagos que incluyan cupones (Si se reali
 ### Iterator ###
 
 Este patr&oacute;n es utilizado para calcular el monto a pagar por la compra, considerando si tiene o no descuento, fue considerado  para hacer compras de diversos articulos pero el cupon se aplicaría solo una vez, para un artículo o para una categoría (depende del cupón).
+(No está aplicado, aún estoy revisando la documentación)
 
 ### Decorator ###
 
