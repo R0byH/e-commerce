@@ -1,7 +1,7 @@
 <?php
 
 namespace controllers\Template;
-use controllers/ProductCategoryController;
+use controllers/ProductCategoryDiscountController;
 
 class DescuentoXcantidadXcategoria extends Template
 {

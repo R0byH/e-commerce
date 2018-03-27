@@ -25,3 +25,8 @@ Este patr&oacute;n es utilizado para calcular el monto a pagar por la compra, co
 ### Decorator ###
 
 Este patr&oacute;n es utilizado para calcular el descuento que se aplicará (si amer&iatuce;a) por la compra; en caso de que haya alg&uacute;n descuento el monto del mismo será considerado en el momento de calcular el total a pagar.
+
+
+## TOMAR EN CUENTA :
+
+Al ser un propotipo, la funcionalidad no es completa y se tomó como un primer parámetro que los descuentos solo se hacen por medio de un cupon, al cual se consideró que puede tener una fecha de validez o no (es decir una fecha por la que se aplica el descuento del cupón), en caso de no tener validez ver si el descuento se aplicará por la cantidad de productos comprados (de esta manera se aplicará un descuento porcentual), las mismas consideraciones se tendrán para aplicar el descuento por categoria (Fecha y cantidad de pedidos)
