@@ -1,15 +1,24 @@
 <?php
 
-namespace App;
+namespace App/Decorator;
+use controllers/ProductDiscountController;
 
 class DecoratorDescuentoPorcentaje extends ModifiedDescuento
 {
-    public function intelligence()
+    public function descuentoPorcentaje($cupon,$cantidad,$costo)
     {
-        return parent::intelligence() * 2;
-    }
-    public function castSpell($spell)
-    {
-        return "casts the {$spell} spell";
+        $fechaActual= date('d/m/Y');
+
+        $monto_descuento = parent::descuentoPorcentaje($cupon,$cantidad,$costo);
+
+        //consultar el descuento por categoría para este cupon
+        $model=ProductDiscount::where('coupon_code',$cupon)->first();
+        $cantidadminima = $model->minimum_order_value;
+        if($cantidad >= $cantidadminima)
+        {
+            $monto_descuento = $costo/10; //$this->request->total es el costo antes del descuento El costo del descuento es 10%
+        }
+        
+        return $monto_descuento;
     }
 }
