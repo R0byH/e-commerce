@@ -14,8 +14,14 @@ Para el funcionamiento se identific&oacute; los siguientes modelos con sus respe
 
 ## PATRONES :
 
-*Decorator (patrón estructural) (con una clase descuento y las subclases descuento_producto con un método de descuentoproducto(idproducto) y descuento_categoria con un metodo descuentocategoria() y la subclase descuento_producto_categoria la cual tendría los anteriores métodos)
+### Template ###
 
-*Template Method para realizar los descuentos ( descuento(monto a descontar) )
+Este patr&oacute;n es utilizado para los pagos que incluyan cupones (Si se realiz&oacute; un cago con cup&oacute;n, se analizará si el articulo coprado tiene algun descuento, si no se paga con un cup&oacute;n no hay derecho alguno a descuentos)
 
-*Iterator para ver quizas la cantidad de compras realizadas con un individuo o quizas las compras realizadas que puedan generar algun descuento.
+### Iterator ###
+
+Este patr&oacute;n es utilizado para calcular el monto a pagar por la compra, considerando si tiene o no descuento.
+
+### Decorator ###
+
+Este patr&oacute;n es utilizado para calcular el descuento que se aplicará (si amer&iatuce;a) por la compra; en caso de que haya alg&uacute;n descuento el monto del mismo será considerado en el momento de calcular el total a pagar.
